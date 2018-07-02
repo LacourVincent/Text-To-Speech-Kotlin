@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Text To Speech</string>
+
+    <string name="button_britain">English</string>
+    <string name="button_french">French</string>
+    <string name="button_spanish">Spanish</string>
+    <string name="button_german">German</string>
+
+    <string name="hint_text">Text to say</string>
+    <string name="doubleBackToExit">Press the back button again to exit.</string>
+
+</resources>

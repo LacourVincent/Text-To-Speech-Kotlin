@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp"
+        card_view:layout_constraintBottom_toTopOf="@+id/button_english">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/button_english"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/textToSay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:maxLines="4"
+                android:textColor="@color/colorText"
+                android:hint="@string/hint_text"
+                android:inputType="textMultiLine" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/reference"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_english"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/button_britain"
+        android:textColor="@color/colorTextButton"
+        android:background="@color/colorButtonBritain"
+        app:layout_constraintBottom_toTopOf="@+id/reference"
+        app:layout_constraintEnd_toStartOf="@+id/reference" />
+
+    <Button
+        android:id="@+id/button_french"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/button_french"
+        android:textColor="@color/colorTextButton"
+        android:background="@color/colorButtonUS"
+        app:layout_constraintBottom_toTopOf="@+id/reference"
+        app:layout_constraintStart_toEndOf="@+id/reference" />
+
+    <Button
+        android:id="@+id/button_spanish"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/button_spanish"
+        android:textColor="@color/colorTextButton"
+        android:background="@color/colorButtonIndia"
+        app:layout_constraintEnd_toStartOf="@+id/reference"
+        app:layout_constraintTop_toBottomOf="@+id/reference" />
+
+    <Button
+        android:id="@+id/button_german"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="@string/button_german"
+        android:textColor="@color/colorTextButton"
+        android:background="@color/colorButtonAustralia"
+        app:layout_constraintStart_toEndOf="@+id/reference"
+        app:layout_constraintTop_toBottomOf="@+id/reference" />
+
+
+
+</android.support.constraint.ConstraintLayout>
